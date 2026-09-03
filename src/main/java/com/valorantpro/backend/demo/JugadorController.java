@@ -6,7 +6,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/jugadores")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+    "http://localhost:4200",
+    "https://valorant-frontend-ruby.vercel.app"
+})
 public class JugadorController {
 
     private final JugadorRepository jugadorRepository;
